@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -30,6 +29,15 @@
             android:paddingRight="16dp"
             android:text="@string/instructions"
             android:textColor="@color/colorPrimaryText" />
+
+        <EditText
+            android:id="@+id/player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/name"
+            android:inputType="textCapWords"
+            android:paddingBottom="8dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -139,45 +147,50 @@
                 android:text="@string/quote2"
                 android:textAlignment="center" />
 
-            <RadioGroup
-                android:id="@+id/group2"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/question_2_photo">
+                android:layout_below="@id/question_2_quote"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/question_2_photo"
+                android:text="Who starred in this movie?"
+                android:textAlignment="center" />
 
-                <RadioButton
-                    android:id="@+id/radio2a"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion2"
-                    android:text="@string/answer2a" />
+            <CheckBox
+                android:id="@+id/check2a"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_2_photo"
+                android:onClick="resolveQuestion2"
+                android:text="@string/check2a" />
 
-                <RadioButton
-                    android:id="@+id/radio2b"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion2"
-                    android:text="@string/answer2b" />
+            <CheckBox
+                android:id="@+id/check2b"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check2a"
+                android:onClick="resolveQuestion2"
+                android:text="@string/check2b" />
 
-                <RadioButton
-                    android:id="@+id/radio2c"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion2"
-                    android:text="@string/answer2c" />
+            <CheckBox
+                android:id="@+id/check2c"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check2b"
+                android:onClick="resolveQuestion2"
+                android:text="@string/check2c" />
 
-                <RadioButton
-                    android:id="@+id/radio2d"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion2"
-                    android:text="@string/answer2d" />
-
-            </RadioGroup>
+            <CheckBox
+                android:id="@+id/check2d"
+                style="@style/RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check2c"
+                android:onClick="resolveQuestion2"
+                android:text="@string/check2d" />
 
         </RelativeLayout>
 
@@ -281,7 +294,7 @@
             <TextView
                 android:id="@+id/question_4_quote"
                 style="@style/Quote"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/question_4_title"
                 android:layout_marginTop="28dp"
@@ -654,6 +667,7 @@
                 android:src="@drawable/smallterminator" />
 
             <TextView
+                android:id="@+id/question_9_quote"
                 style="@style/Quote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -663,45 +677,24 @@
                 android:text="@string/quote9"
                 android:textAlignment="center" />
 
-            <RadioGroup
-                android:id="@+id/group9"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/question_9_photo">
+                android:layout_below="@id/question_9_quote"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/question_9_photo"
+                android:text="@string/which_movie_was_it"
+                android:textAlignment="center" />
 
-                <RadioButton
-                    android:id="@+id/radio9a"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion9"
-                    android:text="@string/answer9a" />
-
-                <RadioButton
-                    android:id="@+id/radio9b"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion9"
-                    android:text="@string/answer9b" />
-
-                <RadioButton
-                    android:id="@+id/radio9c"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion9"
-                    android:text="@string/answer9c" />
-
-                <RadioButton
-                    android:id="@+id/radio9d"
-                    style="@style/RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="resolveQuestion9"
-                    android:text="@string/answer9d" />
-
-            </RadioGroup>
+            <EditText
+                android:id="@+id/question_9_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question_9_photo"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/question_9_hint"
+                android:inputType="textCapWords" />
 
         </RelativeLayout>
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Movies Quotes Quiz</string>
     <string name="game_title">Movie Quotes Quiz</string>
-    <string name="instructions">The purpose of the quiz is to match the quote with the corresponding movie.Good Luck!</string>
+    <string name="instructions">Helllo! The purpose of the quiz is to match the quote with the corresponding movie.Please enter your name below. Good Luck!</string>
     <string name="question_1_title">Question 1</string>
     <string name="quote1">You talkin\' to me?</string>
     <string name="answer1a">Goodfellas</string>
@@ -64,4 +64,11 @@
     <string name="answer10d">The village</string>
     <string name="button_results">Show Results</string>
     <string name="button_reset">Reset</string>
+    <string name="name">Name</string>
+    <string name="which_movie_was_it">Which movie was it?</string>
+    <string name="check2a">Tom Cruise</string>
+    <string name="check2b">Al Pacino</string>
+    <string name="check2c">Renee Zellweger</string>
+    <string name="check2d">Hugh Grant</string>
+    <string name="question_9_hint">Name of the movie</string>
 </resources>
